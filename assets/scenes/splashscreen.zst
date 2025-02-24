@@ -1,0 +1,24 @@
+- Zurutsushi Scene Description 1
+
+Id = 10
+Name = "SplashScreen"
+
+Resources {
+    texture raylib_logo "assets/imgs/raylib_logo.png"
+    texture dotnet_logo "assets/imgs/dotnet_logo.png"
+    texture csharp_logo "assets/imgs/csharp_logo.png"
+}
+
+Variables {
+    string made_with "Made with:"
+    rgba background_colour 10 10 10 255
+}
+
+do StartScene
+
+do BckClr background_colour
+do PrintTexture raylib_logo 40 40
+do PrintText made_with 80 80 Ayaya_Kanadaka
+do SleepWait 5
+
+do EndScene
