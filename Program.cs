@@ -18,7 +18,7 @@ namespace Zurutsushi {
       Colour PinkishColour = new Colour(238, 211, 238, 0xff);
       // TODO: Maybe check if I can pull out the resources
       // without doing "../../.." each time to pull from
-      // the project root from the executable's path.
+      // the project root from the executable's path. (24.2.25)
       RFont akaya = new RFont("../../../assets/fonts/Akaya_Kanadaka/AkayaKanadaka-Regular.ttf");
       RFont kiwi = new RFont("../../../assets/fonts/Kiwi_Maru/KiwiMaru-Regular.ttf");
       RFont borel = new RFont("../../../assets/fonts/Borel/Borel-Regular.ttf");
@@ -29,8 +29,8 @@ namespace Zurutsushi {
       SetConfigFlags(ConfigFlags.Msaa4xHint | ConfigFlags.VSyncHint);
       SetTargetFPS(60);
       
-      // FIXME: for some reason music doesn't work.
-      // FIXME: Resolve unicode shi
+      // FIXME: for some reason music doesn't work. (24.2.25)
+      // FIXME: Resolve unicode shi. (24.2.25)
 
       while(!WindowShouldClose()) {
         // Track keybinds
