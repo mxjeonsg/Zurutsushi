@@ -166,6 +166,7 @@ namespace Zurutsushi.Framework {
     public void Dispose()
     => Raylib.UnloadSound(this.inner_sound);
 
+    [Obsolete("UwU", false)]
     public void play() {
       this.verify_audio_obj();
 
@@ -296,6 +297,7 @@ namespace Zurutsushi.Framework {
     public void Dispose()
     => Raylib.UnloadMusicStream(this.inner_music);
 
+    [Obsolete("Sound-related calls shouldn't be done. Something's off with sound in Raylib. Should investigate further.", false)]
     public void play() {
       this.verify_music_obj();
       
@@ -307,6 +309,7 @@ namespace Zurutsushi.Framework {
       Raylib.UpdateMusicStream(this.inner_music);
     }
 
+    [Obsolete("Sound-related calls shouldn't be done. Something's off with sound in Raylib. Should investigate further.", false)]
     public void stop() {
       this.verify_music_obj();
       
@@ -317,6 +320,7 @@ namespace Zurutsushi.Framework {
       this.already_started = false;
     }
 
+    [Obsolete("Sound-related calls shouldn't be done. Something's off with sound in Raylib. Should investigate further.", false)]
     public void pause() {
       this.verify_music_obj();
       
@@ -325,6 +329,7 @@ namespace Zurutsushi.Framework {
       this.is_playing = false;
     }
 
+    [Obsolete("Sound-related calls shouldn't be done. Something's off with sound in Raylib. Should investigate further.", false)]
     public void resume() {
       if(!this.already_started) this.play();
 
@@ -337,6 +342,7 @@ namespace Zurutsushi.Framework {
 
     }
 
+    [Obsolete("Sound-related calls shouldn't be done. Something's off with sound in Raylib. Should investigate further.", false)]
     public void seek(float position) {
       this.verify_music_obj();
       
@@ -344,6 +350,7 @@ namespace Zurutsushi.Framework {
       Raylib.SeekMusicStream(this.inner_music, position);
     }
 
+    [Obsolete("Sound-related calls shouldn't be done. Something's off with sound in Raylib. Should investigate further.", false)]
     public void controlPitch(float new_pitch){
       this.verify_music_obj();
       
@@ -352,6 +359,7 @@ namespace Zurutsushi.Framework {
       this.current_pitch = new_pitch;
     }
 
+    [Obsolete("Sound-related calls shouldn't be done. Something's off with sound in Raylib. Should investigate further.", false)]
     public void setDefaultPitch() {
       this.verify_music_obj();
 
@@ -360,6 +368,7 @@ namespace Zurutsushi.Framework {
       this.current_pitch = RSfx.DefaultPitch;
     }
 
+    [Obsolete("Sound-related calls shouldn't be done. Something's off with sound in Raylib. Should investigate further.", false)]
     public void controlPan(float new_pan) {
       this.verify_music_obj();
       
@@ -368,6 +377,7 @@ namespace Zurutsushi.Framework {
       this.current_pan = new_pan;
     }
 
+    [Obsolete("Sound-related calls shouldn't be done. Something's off with sound in Raylib. Should investigate further.", false)]
     public void setDefaultPan() {
       this.verify_music_obj();
       
@@ -376,6 +386,7 @@ namespace Zurutsushi.Framework {
       this.current_pan = RSfx.DefaultPan;
     }
 
+    [Obsolete("Sound-related calls shouldn't be done. Something's off with sound in Raylib. Should investigate further.", false)]
     public void controlVolume(float new_volume) {
       this.verify_music_obj();
       
@@ -384,6 +395,7 @@ namespace Zurutsushi.Framework {
       this.current_volume = new_volume;
     }
 
+    [Obsolete("Sound-related calls shouldn't be done. Something's off with sound in Raylib. Should investigate further.", false)]
     public void setDefaultVolume() {
       this.verify_music_obj();
       
@@ -392,6 +404,7 @@ namespace Zurutsushi.Framework {
       this.current_volume = RSfx.DefaultVolume;
     }
 
+    [Obsolete("Sound-related calls shouldn't be done. Something's off with sound in Raylib. Should investigate further.", false)]
     public void setVolumeMax() {
       this.verify_music_obj();
       
@@ -400,6 +413,7 @@ namespace Zurutsushi.Framework {
       this.current_volume = RSfx.MaxVolume;
     }
 
+    [Obsolete("Sound-related calls shouldn't be done. Something's off with sound in Raylib. Should investigate further.", false)]
     public void setVolumeMin() {
       this.verify_music_obj();
       
